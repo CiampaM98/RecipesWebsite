@@ -1,15 +1,13 @@
 html, body {
-  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10vw;
   margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
   display: flex;
+  flex-flow: row wrap;
   align-content: space-between;
-  overflow: hidden;
+  overflow: scroll;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 5vw;
 }
 
 :root {
@@ -25,14 +23,13 @@ html, body {
 
 #home-page {
   z-index: 9999;
+  text-align: center;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
-  position: absolute;
+  position: relative;
   padding-top: 15%;
-  bottom: 20%;
+  bottom: 0%;
   width: 100%;
-  top: 4vh;
 }
 
 #home-page h3 {
@@ -48,8 +45,8 @@ html, body {
 }
 
 #meal-type {
-  order: 1;
   position: relative;
+  align-items: left;
   margin: 0 var(--spacing, 0px);
   transition: margin 0.25s;
 }
@@ -57,10 +54,10 @@ html, body {
 #meal-type svg {
   width: 20vw;
   height: 115vh;
-  position: absolute;
+  position: relative;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%) translateZ(0);
+  transform: translate(-50%) translateY(-55%);
   fill: none;
   stroke: var(--stroke, var(--line));
   stroke-linecap: round;
@@ -77,17 +74,15 @@ html, body {
   --offset: 180px;
 }
 
-html body {
-  background: #27ae60;
-  color: #fff;
-  font-family: "Oswald", sans-serif;
-  font-size: 100px;
-}
-
 #typing-text {
+  position: relative;
   width: 800px;
   margin: 0 auto;
   padding: 15px;
   text-align: center;
   text-shadow: 2px 5px #000;
+}
+
+#flex-divider {
+  flex-basis: 100%;
 }/*# sourceMappingURL=mycss.css.map */

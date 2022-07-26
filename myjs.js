@@ -1,4 +1,4 @@
-var myString = "Welcome to the codepen of Int3cn0.";
+var myString = "Welcome to my personal recipe book!";
 var myArray = myString.split("");
 var loopTimer;
 
